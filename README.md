@@ -1,0 +1,2 @@
+## Project Euler Algorithms Repo
+This is repository where I will be completing the first 50 project euler algorithms using Javscript and testing them using Jest. My goal for this project is to write a test for the problem, work through the problem, find the correct solution, get my test to pass, push to github, then do a quick write up summarizing the components of my algorithm, programming concepts that were utilized, challenges I faced, how I overcame them, and real world applications of the algorithm in question. 
