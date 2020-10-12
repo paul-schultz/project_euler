@@ -36,7 +36,7 @@ function fibonacci(n) {
       } 
     }
     var sum = arr.reduce((a, b) => a + b, 0)
-    return sum;
+    console.log(sum);
   }
   
   // Rather than taking n as an input, take a number as a ceiling and return all of the fibonacci numbers up to that point
@@ -56,6 +56,6 @@ function fibonacci(n) {
   // fibonacci(10); 
   // fibonacciArray(10);
   // evenFibonacciArray(10);
-  evenFibonacciSum(fibonacciUpTo(4000000)); // Output is 4613732 (correct answer)
+  evenFibonacciSum(fibonacciUpTo(90)); // Output is 4613732 (correct answer)
   // evenFibonacciSumUpTo(14);
   

@@ -26,8 +26,6 @@ function fibonacciUpTo(limit) {
     return int
 }
 
-
-module.exports = fibonacci;
 module.exports = evenFibonacciSum;
-module.exports = fibonacciUpTo;
+
 
