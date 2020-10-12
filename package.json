@@ -6,7 +6,8 @@
   "author": "paul-schultz <paul.william.schultz@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "algo": "node generator.js"
   },
   "devDependencies": {
     "jest": "^26.5.3"

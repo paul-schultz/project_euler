@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const algoNumber = "05";
-const algoTitle = "smallest_multiple";
-const algoFunctionName = "smallestMultiple";
+const algoNumber = "06";
+const algoTitle = "sum_square_difference";
+const algoFunctionName = "sumSquareDifference";
 
 fs.mkdir(`./${algoNumber}`, function(err) {
     if (err) {
