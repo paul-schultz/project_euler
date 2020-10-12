@@ -17,6 +17,7 @@ test('sum of even-valued fibonacci terms whose values do not exceed thirty', () 
         var int = n - 1;
         return int
     }
+    
     expect(evenFibonacciSum(fibonacciUpTo(30))).toBe(10);
 });
 
@@ -58,6 +59,6 @@ test('sum of even-valued fibonacci terms whose values do not exceed four million
         var int = n - 1;
         return int
     }
-    
+
     expect(evenFibonacciSum(fibonacciUpTo(4000000))).toBe(4613732);
 });
