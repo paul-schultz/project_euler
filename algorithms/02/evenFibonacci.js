@@ -20,7 +20,7 @@ function evenFibonacciSum(n) {
 function fibonacciUpTo(limit) {
     var n = 1;
     while ( fibonacci(n) < limit ) {
-    n++;
+      n++;
     }
     var int = n - 1;
     return int
