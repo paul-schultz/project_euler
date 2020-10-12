@@ -1,0 +1,14 @@
+{
+  "name": "project_euler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:paul-schultz/project_euler_algorithms.git",
+  "author": "paul-schultz <paul.william.schultz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
