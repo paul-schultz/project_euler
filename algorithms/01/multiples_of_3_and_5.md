@@ -1,6 +1,6 @@
-## Algorithm 01: Multiples of 3 and 5
+## Problem 01: Multiples of 3 and 5
 From projecteuler.net: 
-> "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000."
+> If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
 
 At first glance this problem seems like the classic FizzBuzz Test with a twist. Instead of printing out a list of numbers and returning Fizz for every multiple of 3, Buzz for every multiple of 5, and FizzBuzz for every multiple of 3 and 5, you create a running total that adds up all of the multiples of 3 and 5 below a given number.
 So I started off by writing the test for my function with Jest. As the problem summary states; the multiples of 3 and 5 below ten are 3, 5, 6, and 9. The sum of these numbers is 23. That seems like a great starting point for writing my test in Jest, the finished test looks like this:
