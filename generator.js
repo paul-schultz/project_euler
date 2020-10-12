@@ -1,47 +1,47 @@
 const fs = require('fs');
 
-const algoNumber = "06";
-const algoTitle = "sum_square_difference";
-const algoFunctionName = "sumSquareDifference";
+const algoNumber = "08";
+const algoTitle = "largest_product_in_a_series";
+const algoFunctionName = "largestProduct";
 
-fs.mkdir(`./${algoNumber}`, function(err) {
+fs.mkdir(`./algorithms/${algoNumber}`, function(err) {
     if (err) {
         console.log(err)
     } else {
-        console.log(`Directory ${algoNumber} created`)
+        console.log(`Directory '${algoNumber}' created in './algorithms'`)
     }
 });
 
-fs.writeFile(`./${algoNumber}/${algoTitle}.md`, `##${algoTitle}`, function(err) {
+fs.writeFile(`./algorithms/${algoNumber}/${algoTitle}.md`, `##${algoTitle}`, function(err) {
     if (err) {
         console.log(err)
     } else {
-        console.log(`${algoTitle}.md created at './${algoNumber}'`)
+        console.log(`${algoTitle}.md created at './algorithms/${algoNumber}'`)
     }
 })
 
-fs.writeFile(`./${algoNumber}/worksheet.js`, `function ${algoFunctionName}() {}`, function(err) {
+fs.writeFile(`./algorithms/${algoNumber}/worksheet.js`, `function ${algoFunctionName}() {}`, function(err) {
     if (err) {
         console.log(err)
     } else {
-        console.log(`worksheet.js created at './${algoNumber}'`)
+        console.log(`worksheet.js created at './algorithms/${algoNumber}'`)
     }
 })
 
-fs.writeFile(`./${algoNumber}/${algoFunctionName}.js`, `function ${algoFunctionName}() {} \n 
+fs.writeFile(`./algorithms/${algoNumber}/${algoFunctionName}.js`, `function ${algoFunctionName}() {} \n 
 module.exports = ${algoFunctionName}    `, 
 
 function (err) {
     if (err) throw err;
-    console.log(`${algoFunctionName}.js created at './${algoNumber}'`);
+    console.log(`${algoFunctionName}.js created at './algorithms/${algoNumber}'`);
 });
 
-fs.writeFile(`./${algoNumber}/${algoFunctionName}.test.js`, `const ${algoFunctionName} = require('./${algoFunctionName}') \n
+fs.writeFile(`./algorithms/${algoNumber}/${algoFunctionName}.test.js`, `const ${algoFunctionName} = require('./${algoFunctionName}') \n
 test('test caption', () => { 
     expect(${algoFunctionName}(num)).toBe(num); 
 });     `, 
 
 function (err) {
     if (err) throw err;
-    console.log(`${algoFunctionName}.test.js created at './${algoNumber}'`);
+    console.log(`${algoFunctionName}.test.js created at './algorithms/${algoNumber}'`);
 });
