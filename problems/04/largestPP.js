@@ -20,6 +20,7 @@ function checkFactors(num) {
     for ( i = 2, j = num / 2 ; i <= j; i++ ) {
       if (num % i == 0) {
         var k = num / i;
+        // Change this number to check length of both factors
         if (i.toString().length == 3 && k.toString().length == 3) {
           arr.push(num);
           arr.push(i);
@@ -38,4 +39,3 @@ function largestPP() {
 
 largestPP()
  
-module.exports = largestPP    
