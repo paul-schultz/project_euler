@@ -12,7 +12,6 @@ Inside of the './problems' directory, there will be a module for each problem th
 
 4. A problem_name.md file that will contain a sometimes brief, sometimes too long summary of the Project Euler problem and the steps that I took to find a solution to it.
 
-Project Rules:
-1. Use of StackOverflow is allowed, but only for finding guidance on an individual part of the problem (i.e. most efficient way to check if a number is a palindrome) but not for the overall solution to the problem itself (i.e. Project Eueler problem 4 solution).
+
 
 
