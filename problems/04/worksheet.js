@@ -24,7 +24,7 @@ function largestPP(digits) {
 
 // Function that checks if number is palindrome
 function checkPal(num) {
-    var numStr = = num.toString();
+    var numStr = num.toString();
     if (numStr == numStr.split('').reverse().join('')) {
         return `${numStr} is a palindrome`
     } else {
