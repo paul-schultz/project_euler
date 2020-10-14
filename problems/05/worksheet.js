@@ -26,6 +26,26 @@ function smallestMultiple() {
       return i;
     }
   }
+
+  // Refactored code
+  function smallestMultiple(num) {
+    // variable to keep track of number of multiple in a number
+    var multiples = 0
+    for (var i = 1; ; i++) {
+      // Nested for loop to check for number of multiples in i
+      for (var j = 1; j <= num; j++) {
+        if ( i % j == 0) {
+          multiples += 1 ;
+          } else {
+            j++;
+            multiples = 0;
+          }
+          // when multiples is equal to input num, i is the solution
+      } if (multiples == num) {
+        return i;
+      }
+    } 
+  }
   
   smallestMultiple(); //answer is 232792560 which is correct
 
