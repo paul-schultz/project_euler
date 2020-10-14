@@ -1,9 +1,8 @@
 function smallestMultiple() {
     // Start at twenty and increment by 1
-    for (var i = 20; 20 <= 1000; i++) {
+    for (var i = 0; 0 <= 1000; i++) {
         // If i is multiple of 1 - 20 return i
-      if (
-           i % 1 == 0
+      if ( i % 1 == 0
         && i % 2 == 0
         && i % 3 == 0
         && i % 4 == 0
