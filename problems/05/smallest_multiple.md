@@ -1,5 +1,5 @@
 ## Problem 05: Smallest Multiple
-From prjecteuler.net:
+From projecteuler.net:
 >2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 At first glance I thought that this was the easiest problem so far. All I had to do was create a for loop that would start at one and increase by one until it found a number that was divisible by 1 through 20. Literally took me less than 5 minutes to find the correct solution, a new record. But while m function did find me the correct solution to the problem, the code went for 27 lines:
@@ -35,7 +35,7 @@ function smallestMultiple(num) {
     } 
   }
 ```
-From over 25 to just 12 lines of code. While it is an improvement aesthetically, it did take my function much longer to execute, like 20 seconds longer to complete both test cases. However, what this function lacks in speed it has gained in utility because it can find the lowest multiple of any range of numbers, not just for 20. So that is a decent tradeoff in my opinion. Plus taking the original function and thinking about how I can simplify it was a fun mental exercise. My final passing test cases look like this: 
+From over 25 to just 12 lines of code. While the function has improved in aesthetics, it did take much longer to execute, like 20 seconds longer to complete both test cases. But this function has lost in performance it has gained in utility, because now it can find the lowest multiple of any range of numbers, not just for 20. So that is a decent tradeoff in my opinion. Plus taking the original function and thinking about how I can simplify it was a fun mental exercise. My final passing test cases look like this: 
 ```
 test('The smallest multiple of 1 through 10 is 2520', () => { 
     expect(smallestMultiple(10)).toBe(2520); 
