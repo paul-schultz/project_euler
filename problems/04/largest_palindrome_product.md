@@ -31,7 +31,7 @@ Next I defined a constant `palindromes` equal to `findPal(998001, 900000)` to sa
 ```
 const palindromes = findPal(998001, 900000);
 ```
-My next mission was to write a function `checkFactors(num)`  that would be able to take a number, us iteration to find all of its factors, then out of those factors, determine whether there are any 3-digit combinations, and if true, add those two factors to an array along with the original number. I already used a version of this function in the largest prime factor problem, so I just added in some logic that converts each combination of factors into strings, and if their lengths are both equal to 3 then an array is returned with all three numbers. The finished function looks like this: 
+My next mission was to write a function `checkFactors(num)`  that would be able to take a number, use iteration to find all of its factors, then out of those factors, determine whether there are any 3-digit combinations, and if true, add those two factors to an array along with the original number. I already used a version of this function in the largest prime factor problem, so I just added in some logic that converts each combination of factors into strings, and if their lengths are both equal to 3 then an array is returned with all three numbers. The finished function looks like this: 
 ```
 function checkFactors(num) {
     var arr = [];
