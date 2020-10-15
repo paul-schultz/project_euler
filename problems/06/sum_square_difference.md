@@ -26,7 +26,7 @@ function squareOfSum(n) {
     console.log(sqSum); 
   }
 ```
-Then I needed a function putting it all together. I could have written a function that just called the earlier functions but I decided to write a new one because that way I only have to exports one function over to the test module. The final function I wrote looks like this: 
+Then I needed a function putting it all together. I could have wrote a function that just called the earlier functions but I decided to write a new one instead, because that way I only have to export one function over to the test module. The final function I wrote looks like this: 
 ```
 function sumSquareDifference(n) {
     var sumSq = 0; 
@@ -41,7 +41,7 @@ function sumSquareDifference(n) {
     console.log(sqSum - sumSq);
   }
 ```
-And my test case from the example from the problem looks like this: 
+And my test case using the numbers from the example problem looks like this: 
 ```
 test('The sum square difference for the first ten natural numbers is 2640', () => { 
     expect(sumSquareDifference(10)).toBe(2640); 
