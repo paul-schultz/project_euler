@@ -10,9 +10,9 @@ function largestProduct(num, digits) {
       }
       arr.push(numSum)
     }
-    
+
     var maxNum = (Math.max(...arr))
     return maxNum
-  }
+}
  
 module.exports = largestProduct    
