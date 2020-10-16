@@ -23,7 +23,7 @@ test('The largest palindrome made from the product of two 2-digit numbers is 900
               arr.push(i);
               arr.push(k);
               let cleanOutput = [...new Set(arr)];
-              console.log(cleanOutput)
+              // console.log(cleanOutput)
             } 
           }
         }
@@ -64,7 +64,7 @@ test('The largest palindrome made from the product of two 3-digit numbers is 906
               arr.push(i);
               arr.push(k);
               let cleanOutput = [...new Set(arr)];
-              console.log(cleanOutput)
+              // console.log(cleanOutput)
             } 
           }
         }
