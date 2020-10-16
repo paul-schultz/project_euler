@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const algoNumber = "09";
-const algoTitle = "special_pythagorean_triplet";
-const algoFunctionName = "specialTriplet";
+const algoNumber = "10";
+const algoTitle = "primeSum";
+const algoFunctionName = "primeSum";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
