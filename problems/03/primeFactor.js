@@ -23,3 +23,4 @@ function largestPrimeFactor(num) {
   
   module.exports = largestPrimeFactor;
   
+
