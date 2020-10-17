@@ -22,6 +22,7 @@ function specialTriplet(num) {
 ```
 
 So if I plug in 1000 I get and array that looks like this: `[200375400, 375200400]`. Which gives us the pythagorean triplet of 200&sup2; + 375&sup2; = 400&sup2; where `a + b + c == 1000` and its equivalent partition with `a` and `b` switched. This is good news, because this is the answer that I want, but it still needs a little tweaking to get the correct format I want for the problem. Maybe the writers of this problem foresaw that people would get two equivalent partitions which is why they asked for the product of the triplet, to have one final number value as the solution. So instead of pushing the partition to `arr` I am going to push the product of `a` `b` & `c`. Then to get rid of the duplicate array value at the end I'm going to use a little ES6 magic, then return the 0 index of the new array just so I get a clean single integer as a final output. For my finished solution, `specialTriplet(1000) = 31875000` and looks like this:
+
 ```
 function specialTriplet(num) {
   var arr = [];
