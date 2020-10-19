@@ -1,8 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "10";
-const algoTitle = "primeSum";
-const algoFunctionName = "primeSum";
+const algoNumber = "12";
+const mdTitle = "highly_divisible_triangular_number";
+const mdHeader = `## Problem ${algoNumber}: Highly Divisible Triangular Number`
+const algoFunctionName = "triangle";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
@@ -12,11 +13,11 @@ fs.mkdir(`./problems/${algoNumber}`, function(err) {
     }
 });
 
-fs.writeFile(`./problems/${algoNumber}/${algoTitle}.md`, `##${algoTitle}`, function(err) {
+fs.writeFile(`./problems/${algoNumber}/${mdTitle}.md`, `${mdHeader}\nFrom projecteuler.net:\n>`, function(err) {
     if (err) {
         console.log(err)
     } else {
-        console.log(`${algoTitle}.md created at './problems/${algoNumber}'`)
+        console.log(`${mdTitle}.md created at './problems/${algoNumber}'`)
     }
 })
 
