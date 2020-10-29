@@ -66,22 +66,40 @@ function triNum(n, fac) {
     triArr.push(count);
   }
   console.log(triArr)
-  for (var k = triArr.length - 1; k >= Math.ceil(triArr.length/2) ; k--) {
+  for (var k = triArr.length - 1; k >= Math.ceil(triArr.length*0.9) ; k--) {
     var triArrFactors = [];
-    for (var l = 1; l <= triArr[k]/2; l++) {
-      if (triArr[k] % l == 0) {
+    for (var l = 1; l <= Math.sqrt(triArr[k]); l++) {
+      if (triArr[k] % l === 0) {
         triArrFactors.push(l)
+        if (l !== Math.sqrt(triArr[k])) triArrFactors.push(triArr[k]/l);
       }
     }
-    if (triArrFactors.length == fac - 1) {
-      triArrFactors.push(triArr[k])
+    if (triArrFactors.length >= fac) {
       console.log(`n = ${k+1}`)
       console.log(triArr[k])
       console.log(triArrFactors)
+      console.log(triArrFactors.length)
       return
     }
   }
 }
 
-triNum(100, 8)
+triNum(12600, 500) // This finds correct solution, n is 12375 and its value is 76576500
 
+
+// Find factors with time complexity O(sqrt)
+// function factor(A) {
+//   var output = [];
+
+//   for (var i=1; i <= Math.sqrt(A); i++) {
+//     if (A % i === 0) {
+//       output.push(i);
+
+//       if (i !== Math.sqrt(A)) output.push(A/i);
+//     }
+//   }
+
+//   // if (output.indexOf(A) === -1) output.push(A);
+
+//   return output;
+// }
