@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "12";
-const mdTitle = "highly_divisible_triangular_number";
-const mdHeader = `## Problem ${algoNumber}: Highly Divisible Triangular Number`
-const algoFunctionName = "triangle";
+const algoNumber = "11";
+const mdTitle = "largest_product_in_a_grid";
+const mdHeader = `## Problem ${algoNumber}: Largest Product in a Grid`
+const algoFunctionName = "largestProduct";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
