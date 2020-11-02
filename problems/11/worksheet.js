@@ -65,10 +65,6 @@ function maxRLDiagonal() {
     console.log(Math.max(...products))
 }
 
-function largestProduct() {
-    
-} 
-
 maxHorizontal()
 maxVertical()
 maxLRDiagonal()

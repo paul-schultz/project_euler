@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "11";
-const mdTitle = "largest_product_in_a_grid";
-const mdHeader = `## Problem ${algoNumber}: Largest Product in a Grid`
-const algoFunctionName = "largestProduct";
+const algoNumber = "15";
+const mdTitle = "lattice_paths";
+const mdHeader = `## Problem ${algoNumber}: Lattice Paths`
+const algoFunctionName = "latticePaths";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
