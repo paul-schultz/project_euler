@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "15";
-const mdTitle = "lattice_paths";
-const mdHeader = `## Problem ${algoNumber}: Lattice Paths`
-const algoFunctionName = "latticePaths";
+const algoNumber = "16";
+const mdTitle = "power_digit_sum";
+const mdHeader = `## Problem ${algoNumber}: Power Digit Sum`
+const algoFunctionName = "powerDigitSum";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
