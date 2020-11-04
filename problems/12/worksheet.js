@@ -84,7 +84,8 @@ function triNum(n, fac) {
   }
 }
 
-triNum(12600, 500) // This finds correct solution, n is 12375 and its value is 76576500
+triNum(7, 5)
+//triNum(12600, 500) // This finds correct solution, n is 12375 and its value is 76576500
 
 
 // Find factors with time complexity O(sqrt)
