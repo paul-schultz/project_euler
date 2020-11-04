@@ -1,5 +1,1 @@
-const largestProduct = require('./largestProduct') 
-
-test('test caption', () => { 
-    expect(largestProduct(num)).toBe(num); 
-});     
+// No tests for this problem
