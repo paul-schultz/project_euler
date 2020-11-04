@@ -9,3 +9,69 @@ From projecteuler.net:
 21: 1,3,7,21  
 28: 1,2,4,7,14,28    
 We can see that 28 is the first triangle number to have over five divisors. What is the value of the first triangle number to have over five hundred divisors?
+
+Problem 12 was a great challenge, because it had many steps, it made me start very small, then increase my scale my a ton, then have to go back and improve the efficiency of my code due to those changes in scale.
+
+So to start off I needed a program that would take a value `n` and then return `n` triangular numbers. `triangle(3) = 6`, `triangle(5) = 15` and so forth. That code looks like this: 
+```
+var triArr = [];
+for (var i = 1; i <= n ; i++) {
+    var count = 0;
+    for ( var j = 0 ; j <= i ; j++ ) {
+        count += j;
+    }
+    triArr.push(count);
+}
+```
+After that I changed the function so that it would take a number of factors in addition to an n value, and then return the triangular number that possessed that many factors.
+```
+function triangle(n, fac) {
+  // Iterate from i to the nth triangular number
+  for (var i = 1; i <= n; i++) {
+    var count = 0, triArrFactors = [];
+    for ( var j = 0 ; j <= i ; j++ ) {
+      count += j;
+    }
+    // check number of factors
+    for (var k = 1; k <= count/2; k++) {
+      if (count % k == 0) {
+        triArrFactors.push(k)
+      }
+    }
+    // return first number with fac number of factors
+    if (triArrFactors.length == fac - 1) {
+      triArrFactors.push(count)
+      console.log(count)
+      console.log(triArrFactors)
+      return
+    }
+  }
+}
+```
+And this code worked fine for small numbers, however when I wanted to find the triangular number with 500 factors, things started to get very, very slow. Upon researching time complexity of factorial algorithms, I found a wat to refactor the part of my code that was finding the factors of the triangular numbers. This new algorithm had a time complexity of O(sqrt). In addition to that I made it so that after I get the array of `n` triangular numbers, instead of starting from the beginning and checking the factors up to `n`, it starts from the end of array and moves backwards. Then in addition to that I made it so that it only goes back through 10% of the array. This method did require some educated guessing to find the correct solution. In the end calling my function as `triangle(12600, 5000)` gave the correct solution of `76576500`. My final algorithm looks like this:
+```
+function triangle(n, fac) {
+  var triArr = [];
+
+  for (var i = 1; i <= n; i++) {
+    var count = 0;
+    for (var j = 0; j <= i; j++) {
+      count += j;
+    }
+    triArr.push(count);
+  }
+
+  for (var k = triArr.length - 1; k >= Math.ceil(triArr.length * 0.9); k--) {
+    var triArrFactors = [];
+    for (var l = 1; l <= Math.sqrt(triArr[k]); l++) {
+      if (triArr[k] % l === 0) {
+        triArrFactors.push(l);
+        if (l !== Math.sqrt(triArr[k])) triArrFactors.push(triArr[k] / l);
+      }
+    }
+    if (triArrFactors.length >= fac) {
+      return triArr[k];
+    }
+  }
+}
+```
