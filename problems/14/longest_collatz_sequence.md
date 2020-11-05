@@ -80,4 +80,4 @@ var latzLength = [];
     
     return collatzArr[longestIndex][0]
 ```
-And the value that inside `collatzArr[longestIndex][0]` is `837799` whose Collatz sequence is `525` numbers long. Wow!!
+And the value that lives inside `collatzArr[longestIndex][0]` is `837799` whose Collatz sequence is `525` numbers long. Wow!!
