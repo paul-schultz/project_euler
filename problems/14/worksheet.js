@@ -100,7 +100,7 @@ function longestCollatz(n) {
 
 // collatz(3)
 // collatzUpTo(10);
-longestCollatz(1000)
+longestCollatz(1000000)
 
 
 // function longestCollatz() {}
