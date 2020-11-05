@@ -92,13 +92,13 @@ function longestCollatz(n) {
         latzLength.push(collatzArr[i].length)
     }
     var longest = latzLength.reduce((max, v) => max >= v ? max : v, -Infinity);
-    // console.log(longest)
+    console.log(longest)
     var longestIndex = latzLength.indexOf(longest)
     // console.log(latzLength)
     console.log(`The Collatz sequence that begins with ${collatzArr[longestIndex][0]} is the longest`)
 }
 
-// collatz(3)
+// collatz(13)
 // collatzUpTo(10);
 longestCollatz(1000000)
 
