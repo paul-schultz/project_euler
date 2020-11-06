@@ -6,6 +6,10 @@ I started this problem out by drawing a 2x2 grid and labeling the number of step
 
 My first lead came when I found out that for a grid with the dimensions of `a` by `b`, the number of possible lattice paths is equal to the following binomial coefficient:
 
-<img style="text-align:center;"> ![equation](https://latex.codecogs.com/gif.latex?\binom{a&space;&plus;&space;b}{a}) </img> 
+![equation](https://latex.codecogs.com/gif.latex?\binom{a&space;&plus;&space;b}{a}) 
  
-But what does that even mean? I don't know about you but its been 6 years since I've taken a math class. 
+But what does that even mean? I don't know about you but its been 6 years since I've taken a math class. So upon further research I found out the following: that "the binomial coefficient is the number of ways of picking unordered outcomes from possibilities, also known as a combination or combinatorial number." That sounds right up my alley since I am trying to find every possible lattice path outcome from the set of possibilities. The equation for a binomial equation looks like this:
+
+![equation](https://latex.codecogs.com/gif.latex?\binom{n}{k}=\frac{n!}{k!&space;\cdot&space;(n&space;-&space;k)!}) 
+
+Where ![equation](https://latex.codecogs.com/gif.latex?!) is the factorial operation, so if ![equation](https://latex.codecogs.com/gif.latex?n&space;=&space;3), then ![equation](https://latex.codecogs.com/gif.latex?n!&space;=&space;3&space;\cdot&space;2&space;\cdot&space;1). Wait, that kind of looks like a `for` loop! 
