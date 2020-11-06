@@ -6,6 +6,6 @@ I started this problem out by drawing a 2x2 grid and labeling the number of step
 
 My first lead came when I found out that for a grid with the dimensions of `a` by `b`, the number of possible lattice paths is equal to the following binomial coefficient:
 
-![equation](https://latex.codecogs.com/gif.latex?\binom{a&space;&plus;&space;b}{a}) 
+<img style="text-align:center;"> ![equation](https://latex.codecogs.com/gif.latex?\binom{a&space;&plus;&space;b}{a}) </img> 
  
 But what does that even mean? I don't know about you but its been 6 years since I've taken a math class. 
