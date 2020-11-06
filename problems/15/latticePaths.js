@@ -3,21 +3,21 @@ function latticePaths(a,b) {
         k = a,
         z = n - k;
     
-    var nB = n,
-        kB = k,
-        zB = z;
+    var nF = n,
+        kF = k,
+        zF = z;
     
     for (var i = n-1; i >= 1; i--) {
-        nB *= i;
+        nF *= i;
     }
     for (var i = k-1; i >= 1; i--) {
-        kB *= i;
+        kF *= i;
     }
     for (var i = z-1; i >= 1; i--) {
-        zB *= i;
+        zF *= i;
     }
-    
-    var paths = Math.floor(nB / (kB * zB));
+
+    var paths = Math.floor(nF / (kF * zF));
     return paths 
 }
  

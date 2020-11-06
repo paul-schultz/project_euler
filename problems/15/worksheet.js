@@ -5,24 +5,24 @@ function latticePaths(a,b) {
     var k = a;
     var z = n - k;
     // Variables for var!
-    var nB = n,
-        kB = k,
+    var nF = n,
+        kF = k,
         zB = z;
     // compute var! for n k and z
     for (var i = n-1; i >= 1; i--) {
-        nB *= i;
+        nF *= i;
     }
     for (var i = k-1; i >= 1; i--) {
-        kB *= i;
+        kF *= i;
     }
     for (var i = z-1; i >= 1; i--) {
-        zB *= i;
+        zF *= i;
     }
     console.log(a,b)
     console.log(n,k,z)
-    console.log(nB, kB, zB)
+    console.log(nF, kF, zF)
     // Find solution using computed var!'s
-    var paths = nB / (kB * zB);
+    var paths = nF / (kF * zF);
     console.log(paths)
 }
 
