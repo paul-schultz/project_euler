@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "17";
-const mdTitle = "number_letter_counts";
-const mdHeader = `## Problem ${algoNumber}: Number Letter Counts`
-const algoFunctionName = "numberLetterCounts";
+const algoNumber = "18";
+const mdTitle = "maximum_path_sum_i";
+const mdHeader = `## Problem ${algoNumber}: Maximum Path Sum I`
+const algoFunctionName = "maxPath";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
