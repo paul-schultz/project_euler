@@ -1,5 +1,5 @@
-const numberLetterCounts = require('./numberLetterCounts') 
+const count = require('./numberLetterCounts') 
 
-test('test caption', () => { 
-    expect(numberLetterCounts(num)).toBe(num); 
+test('21124 letters in 1 - 1000', () => { 
+    expect(count(1000)).toBe(21124); 
 });     
