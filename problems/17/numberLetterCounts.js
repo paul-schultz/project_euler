@@ -62,16 +62,16 @@ function count(n) {
             to99.push(teens[i-9])
         }
         if (20 <= i && i <= 99) {
-            var digit = i.toString().split('')
-            numbers += (tenthPlace[parseInt(digit[0])-2])
-            numbers += (onePlace[parseInt(digit[1])])
-            to99.push(tenthPlace[parseInt(digit[0])-2] + " " + onePlace[parseInt(digit[1])])
+            var int = i.toString().split('')
+            numbers += (tenthPlace[parseInt(int[0])-2])
+            numbers += (onePlace[parseInt(int[1])])
+            to99.push(tenthPlace[parseInt(int[0])-2] + " " + onePlace[parseInt(int[1])])
         }
         if (100 <= i && i <= 999) {
-            var digit = i.toString().split('')
-            var hundredPlace = ones[parseInt(digit[0] - 1)]
-            var otherNum = parseInt(digit[1] + digit[2])
-            if (digit[1] == 0 && digit[2] == 0) {
+            var int = i.toString().split('')
+            var hundredPlace = ones[parseInt(int[0] - 1)]
+            var otherNum = parseInt(int[1] + int[2])
+            if (int[1] == 0 && int[2] == 0) {
                 numbers += hundredPlace + " hundred"
              } else {
                 var threeDigit = hundredPlace + " hundred and " + to99[otherNum - 1]
@@ -90,5 +90,7 @@ function count(n) {
     
     return array.length
 }
+
+count(1000)
  
 module.exports = count    
