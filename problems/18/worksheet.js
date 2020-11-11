@@ -60,14 +60,3 @@ function maxPath() {
 
 maxPath() //function works answer is 1074
 
-// function test() {
-//     var tri = [
-//         [1, 2, 3],
-//         [4, 5, 6]
-//     ]
-//     var foo = [7, 8, 9]
-//     tri[1] = foo
-//     console.log(tri)
-// }
-
-// test()
