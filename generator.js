@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "20";
-const mdTitle = "factorial_digit_sum";
-const mdHeader = `## Problem ${algoNumber}: Factorial Digit Sum`
-const algoFunctionName = "factorial";
+const algoNumber = "19";
+const mdTitle = "counting_sundays";
+const mdHeader = `## Problem ${algoNumber}: Counting Sundays`
+const algoFunctionName = "sunday";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
