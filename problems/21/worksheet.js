@@ -68,14 +68,15 @@ function amicable(n) {
              && aArr[k] == bArr[i]
             //  This line was added in to remove all of the
             //  perfect numbers, leaving only amicable pairs
-             && i !== k) {
-                ami.push(aArr[i], bArr[k] )
+             && i !== k
+             ) {
+                ami.push(aArr[i])
             }
         }
     }
     // console.log(bArr)
-    var uniq = [...new Set(ami)];
-    console.log(uniq)
+    // var uniq = [...new Set(ami)];
+    // console.log(uniq)
     console.log(ami)
 
     // console.log(bArr[2619])
@@ -85,9 +86,9 @@ function amicable(n) {
     // console.log(bArr[2923])
 
     var sum = 0;
-    for (var i = 0; i <= uniq.length - 1; i++) {
-        sum += uniq[i]
-        console.log(uniq[i])
+    for (var i = 0; i <= ami.length - 1; i++) {
+        sum += ami[i]
+        // console.log(ami[i])
     }
     console.log(sum)
 }
