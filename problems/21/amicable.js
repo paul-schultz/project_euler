@@ -34,7 +34,7 @@ function amicable(n) {
         sum += uniq[i]
     }
 
-    console.log(sum)
+    return sum
 } 
 
 amicable(10000)
