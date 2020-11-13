@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "22";
-const mdTitle = "names_scores";
-const mdHeader = `## Problem ${algoNumber}: Names Scores`
-const algoFunctionName = "names";
+const algoNumber = "23";
+const mdTitle = "non_abundant_sums";
+const mdHeader = `## Problem ${algoNumber}: Non-abundant Sums`
+const algoFunctionName = "abundant";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
