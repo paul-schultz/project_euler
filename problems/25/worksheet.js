@@ -1,0 +1,1 @@
+function thousand_fibonacci() {}
