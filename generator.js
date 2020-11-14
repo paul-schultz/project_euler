@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "24";
-const mdTitle = "lexicographic_permutations";
-const mdHeader = `## Problem ${algoNumber}: Lexicographic Permutations`
-const algoFunctionName = "lexico";
+const algoNumber = "25";
+const mdTitle = "1000_digit_fibonacci_number";
+const mdHeader = `## Problem ${algoNumber}: 1000-digit Fibonacci Number`
+const algoFunctionName = "thousand_fibonacci";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
