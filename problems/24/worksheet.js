@@ -1,24 +1,28 @@
-function perms(n) {
-    var arr = []
-    for (var i = 0; i <= n; i++) {
-        arr.push(i)
-    }
+function perm(inputArr) {
+    var results = [];
 
-    let result = []
-
-    for (var j = 0; j <= arr.length - 1; i++) {
-        const currentNum = arr[j];
-        const remainingNums = arr.slice(0, j) + arr.slice(j + 1);
-
-        console.log(currentNum)
-        console.log(remainingNums)
-
-        for (let k = 0; k <= remainingNums.length - 1; k++) {
-            result.push(currentNum + perms(arr[n-1])[k])
+    function permute(arr, memo) {
+      var cur, memo = memo || [];
+  
+      for (var i = 0; i < arr.length; i++) {
+        cur = arr.splice(i, 1);
+        
+        if (arr.length === 0) {
+          results.push(memo.concat(cur));
         }
+        permute(arr.slice(), memo.concat(cur));
+        arr.splice(i, 0, cur[0]);
+
+      }
+  
+      return results;
     }
+  
+    var finalArr = permute(inputArr);
+    // console.log(permute(inputArr));
+    console.log(finalArr[999999])
+    return 
+    
+  }
 
-    console.log(result)
-}
-
-perms(2)
+perm([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) //returns [2, 7, 8, 3, 9, 1, 5, 4, 6, 0] pretty fast
