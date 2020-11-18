@@ -11,7 +11,7 @@ function thousand_fibonacci(n) {
             fibLength = parseInt(arr[i-1].toString().length)
         }
         if (fibLength == n) {
-            return i;
+            return i
         }
     }
 } 
