@@ -1,3 +1,4 @@
+// Function uses memoization and recursion
 function perm(inputArr) {
     var results = [];
 
