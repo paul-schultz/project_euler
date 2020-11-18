@@ -50,8 +50,6 @@ function sunday(start, end) {
                 if (i % 7 == 0)
                 // Every year the modulo increases by 1 
                 // After leap years it increases by 2 
-                // After it gets to 6 it goes back down to 0
-                // current value is for 1905
                     sundays.push(i - count)
             }
             var firstSundays = [];
