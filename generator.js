@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-const algoNumber = "25";
-const mdTitle = "1000_digit_fibonacci_number";
-const mdHeader = `## Problem ${algoNumber}: 1000-digit Fibonacci Number`
-const algoFunctionName = "thousand_fibonacci";
+const algoNumber = "26";
+const mdTitle = "reciprocal_cycles";
+const mdHeader = `## Problem ${algoNumber}: Reciprocal Cycles`
+const algoFunctionName = "reciprocal";
 
 fs.mkdir(`./problems/${algoNumber}`, function(err) {
     if (err) {
